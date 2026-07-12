@@ -63,7 +63,7 @@ export function FloatingCTA({ onContact }: FloatingCTAProps) {
           >
             <Mail size={16} strokeWidth={1.5} />
             <span className="hidden sm:inline">Get in touch</span>
-          </button>
+          </button> 
         </motion.div>
       )}
     </AnimatePresence>

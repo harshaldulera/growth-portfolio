@@ -16,7 +16,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     description:
       'Building creator acquisition systems for a prop trading firm. The role sits at the intersection of partnerships, operations, and growth — finding creators, onboarding them, managing relationships, and designing the internal systems that make the channel repeatable.',
     highlights: [
-      'Built creator acquisition and onboarding systems from scratch across The5ers, The5ers Futures, Trade Set Go, and Trade The Pool',
+      'Built creator acquisition and onboarding systems from scratch across The5ers, The5ers Futures and Trade Set Go',
       'Designed and built an internal Creator CRM to track active and inactive creators, deliverables, payments, social links, campaign history, and monthly performance',
       'Manage creator relationships, campaign execution, deliverable tracking, and performance reporting',
       'Research competitors and propose new growth initiatives — including creator competitions, spotlight programs, mentorship frameworks, and email acquisition funnels',

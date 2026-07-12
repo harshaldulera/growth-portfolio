@@ -17,9 +17,12 @@ export function TextReveal({
   const words = text.split(' ')
 
   return (
-    <Tag className={cn('inline-flex flex-wrap', className)}>
+    <Tag className={cn('inline-flex flex-wrap leading-[1.15]', className)}>
       {words.map((word, i) => (
-        <span key={`${word}-${i}`} className="overflow-hidden inline-block mr-[0.25em]">
+        <span
+          key={`${word}-${i}`}
+          className="overflow-hidden inline-block mr-[0.25em] pb-[0.18em] -mb-[0.18em]"
+        >
           <motion.span
             className="inline-block"
             initial={{ y: '110%', opacity: 0 }}

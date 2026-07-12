@@ -127,7 +127,7 @@ export function SelectedWork() {
             className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors link-underline"
           >
             Get in touch
-            <ArrowUpRight size={16} strokeWidth={1.5} />
+            <ArrowUpRight size={16} strokeWidth={1.5} className="shrink-0" />
           </a>
         </FadeUp>
       </div>

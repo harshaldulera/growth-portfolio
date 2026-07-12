@@ -101,7 +101,7 @@ export function Writing() {
                         <ArrowUpRight
                           size={18}
                           strokeWidth={1.5}
-                          className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                          className="shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                         />
                       </>
                     )}

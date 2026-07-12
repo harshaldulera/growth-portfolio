@@ -87,7 +87,7 @@ function ProjectCard({ project }: { project: Project }) {
                   className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors"
                 >
                   View project
-                  <ArrowUpRight size={14} strokeWidth={1.5} />
+                  <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
                 </a>
               )}
             </div>

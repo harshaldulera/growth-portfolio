@@ -46,7 +46,7 @@ export function Contact({ onNavigate }: ContactProps) {
                 className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-text transition-colors link-underline"
               >
                 LinkedIn
-                <ArrowUpRight size={14} strokeWidth={1.5} />
+                <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
               </a>
               <a
                 href={SITE.social.twitter}
@@ -55,7 +55,7 @@ export function Contact({ onNavigate }: ContactProps) {
                 className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-text transition-colors link-underline"
               >
                 X
-                <ArrowUpRight size={14} strokeWidth={1.5} />
+                <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
               </a>
             </div>
           </div>

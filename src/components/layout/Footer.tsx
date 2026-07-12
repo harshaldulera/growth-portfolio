@@ -40,7 +40,7 @@ export function Footer() {
                     className="text-sm text-text-secondary hover:text-text transition-colors link-underline inline-flex items-center gap-1"
                   >
                     {SITE.email}
-                    <ArrowUpRight size={14} strokeWidth={1.5} />
+                    <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
                   </a>
                 </li>
                 <li>
@@ -51,7 +51,7 @@ export function Footer() {
                     className="text-sm text-text-secondary hover:text-text transition-colors link-underline inline-flex items-center gap-1"
                   >
                     LinkedIn
-                    <ArrowUpRight size={14} strokeWidth={1.5} />
+                    <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
                   </a>
                 </li>
                 <li>
@@ -62,7 +62,7 @@ export function Footer() {
                     className="text-sm text-text-secondary hover:text-text transition-colors link-underline inline-flex items-center gap-1"
                   >
                     X
-                    <ArrowUpRight size={14} strokeWidth={1.5} />
+                    <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
                   </a>
                 </li>
               </ul>

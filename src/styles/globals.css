@@ -167,7 +167,10 @@
 
   .link-underline {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    white-space: nowrap;
   }
 
   .link-underline::after {

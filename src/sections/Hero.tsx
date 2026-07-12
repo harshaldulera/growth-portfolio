@@ -62,7 +62,7 @@ export function Hero({ onNavigate }: HeroProps) {
         >
           {SITE.role}
           <br />
-          <span className="text-text-secondary">
+          <span className="text-text-secondary leading-[1.15]">
             <TextReveal text={SITE.headline} delay={0.6} />
           </span>
         </h1>
