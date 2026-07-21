@@ -11,7 +11,7 @@ export const SITE = {
   resumeUrl: '/resume.pdf',
   social: {
     linkedin: 'https://linkedin.com/in/harshal-dulera',
-    instagram: 'https://instagram.com/harshal.dulera',
+    instagram: 'https://instagram.com/harshal0x01',
     twitter: 'https://x.com/harshal0x01',
   },
 } as const

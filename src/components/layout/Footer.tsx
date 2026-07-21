@@ -28,7 +28,7 @@ export function Footer() {
               ))}
             </ul>
 
-            <div className="flex gap-6">
+            <div className="flex flex-wrap gap-6">
               <a
                 href={SITE.social.linkedin}
                 target="_blank"
@@ -36,6 +36,15 @@ export function Footer() {
                 className="link-underline text-sm text-text-secondary hover:text-text transition-colors"
               >
                 LinkedIn
+                <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
+              </a>
+              <a
+                href={SITE.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-underline text-sm text-text-secondary hover:text-text transition-colors"
+              >
+                Instagram
                 <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
               </a>
               <a
