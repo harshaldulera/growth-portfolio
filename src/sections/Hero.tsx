@@ -34,7 +34,7 @@ export function Hero({ onNavigate }: HeroProps) {
       id="home"
       className="relative min-h-screen flex flex-col justify-center section-padding pt-32 pb-20 noise-bg"
     >
-      <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
+      <div className="absolute inset-0 grid-bg opacity-90 pointer-events-none" />
 
       <div className="container-wide relative z-10">
         <motion.p

@@ -4,7 +4,7 @@ import { CORE_SKILLS } from '@/constants/skills'
 
 export function About() {
   return (
-    <section id="about" className="section-padding section-spacing">
+    <section id="about" className="section-padding section-spacing border-t border-border">
       <div className="container-wide">
         <FadeUp>
           <p className="label-sm mb-4">About</p>

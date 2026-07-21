@@ -19,7 +19,7 @@ function MetricCounter({ metric }: { metric: Metric }) {
 
 export function Impact() {
   return (
-    <section id="impact" className="section-padding pb-24 md:pb-32">
+    <section id="impact" className="section-padding pt-16 md:pt-20 pb-24 md:pb-32 bg-bg-muted border-y border-border">
       <div className="container-wide">
         <FadeUp>
           <p className="label-sm mb-8 md:mb-12">Impact</p>

@@ -4,7 +4,7 @@ import { EXPERIENCE } from '@/constants/experience'
 
 export function Experience() {
   return (
-    <section id="experience" className="section-padding section-spacing">
+    <section id="experience" className="section-padding section-spacing bg-bg-muted border-y border-border">
       <div className="container-narrow">
         <FadeUp>
           <p className="label-sm mb-4">Experience</p>

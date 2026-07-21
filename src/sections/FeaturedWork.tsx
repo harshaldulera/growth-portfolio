@@ -102,7 +102,7 @@ function WorkCard({ work }: { work: FeaturedWork }) {
 
 export function FeaturedWork() {
   return (
-    <section id="work" className="section-padding section-spacing bg-bg-elevated/50">
+    <section id="work" className="section-padding section-spacing">
       <div className="container-wide">
         <FadeUp>
           <p className="label-sm mb-4">Featured Work</p>
