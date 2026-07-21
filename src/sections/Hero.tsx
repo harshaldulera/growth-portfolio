@@ -92,6 +92,12 @@ export function Hero({ onNavigate }: HeroProps) {
           >
             LinkedIn
           </MagneticButton>
+          <MagneticButton
+            variant="secondary"
+            onClick={() => window.open(SITE.social.instagram, '_blank')}
+          >
+            Instagram
+          </MagneticButton>
         </motion.div>
       </div>
 
