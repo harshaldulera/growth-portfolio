@@ -3,7 +3,6 @@ export interface ExperienceItem {
   role: string
   company: string
   period: string
-  description: string
   highlights: string[]
 }
 
@@ -13,40 +12,33 @@ export const EXPERIENCE: ExperienceItem[] = [
     role: 'Content Strategist',
     company: 'The5ers',
     period: 'May 2026 — Present',
-    description:
-      'Building creator acquisition systems for a prop trading firm. The role sits at the intersection of partnerships, operations, and growth — finding creators, onboarding them, managing relationships, and designing the internal systems that make the channel repeatable.',
     highlights: [
-      'Built creator acquisition and onboarding systems from scratch across The5ers, The5ers Futures and Trade Set Go',
-      'Designed and built an internal Creator CRM to track active and inactive creators, deliverables, payments, social links, campaign history, and monthly performance',
-      'Manage creator relationships, campaign execution, deliverable tracking, and performance reporting',
-      'Research competitors and propose new growth initiatives — including creator competitions, spotlight programs, mentorship frameworks, and email acquisition funnels',
-      'Develop creator content strategies and cross-brand partnership approaches',
+      'Built creator acquisition systems across multiple brands, making influencer sourcing and onboarding repeatable.',
+      'Designed and implemented a Creator CRM to manage 60+ creator records, partnerships, deliverables, payments, and campaign history.',
+      'Managed creator partnerships from outreach and negotiation to campaign execution and performance tracking.',
+      'Researched competitors and proposed growth initiatives including creator competitions, mentorship programs, and email acquisition funnels.',
     ],
   },
   {
     id: 'proof-of-you',
     role: 'Business Development',
     company: 'Proof Of You',
-    period: 'Previous role',
-    description:
-      'Worked on the business development side of a fintech company — outbound prospecting, partnership development, and the operational work that keeps a sales pipeline moving.',
+    period: 'Apr 2026 - May 2026',
     highlights: [
-      'Outbound prospecting and lead qualification for fintech partnerships',
-      'CRM management and sales operations',
-      'Partnership outreach and relationship development',
+      'Built outbound lead pipelines for fintech, trading, and Web3 companies.',
+      'Executed personalized cold email and LinkedIn outreach to founders and decision-makers.',
+      'Researched target accounts, qualified prospects, and supported partnership discussions and sales operations.',
     ],
   },
   {
     id: 'deepcytes',
     role: 'Cyber Security Analyst',
     company: 'Deepcytes',
-    period: 'Previous role',
-    description:
-      'Technical foundation in security research, penetration testing, and cloud infrastructure. This role shaped how I approach systems thinking — structured, methodical, and detail-oriented.',
+    period: 'Jul 2023 - Jan 2024',
     highlights: [
-      'Penetration testing and cybersecurity research',
-      'AI and cloud infrastructure work',
-      'Analytical approach to complex technical problems',
+      'Built cloud-based environments for penetration testing and red team engagements.',
+      'Developed a BERT-powered API trained on dark web data to strengthen AI-driven cybersecurity analysis.',
+      'Managed and scaled penetration testing engagements, delivering actionable insights to clients.',
     ],
   },
 ]

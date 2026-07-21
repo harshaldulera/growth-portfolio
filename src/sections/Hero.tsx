@@ -12,7 +12,6 @@ interface HeroProps {
 
 export function Hero({ onNavigate }: HeroProps) {
   const titleRef = useRef<HTMLHeadingElement>(null)
-  const subtitleRef = useRef<HTMLParagraphElement>(null)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -23,15 +22,6 @@ export function Hero({ onNavigate }: HeroProps) {
           duration: 1,
           ease: 'power3.out',
           delay: 0.2,
-        })
-      }
-      if (subtitleRef.current) {
-        gsap.from(subtitleRef.current, {
-          y: 30,
-          opacity: 0,
-          duration: 0.8,
-          ease: 'power3.out',
-          delay: 0.5,
         })
       }
     })
@@ -67,12 +57,18 @@ export function Hero({ onNavigate }: HeroProps) {
           </span>
         </h1>
 
-        <p
-          ref={subtitleRef}
-          className="body-lg max-w-2xl mb-10 md:mb-12"
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          className="flex flex-wrap gap-x-6 gap-y-2 mb-10 md:mb-12"
         >
-          {SITE.tagline}
-        </p>
+          {SITE.focus.map((item) => (
+            <span key={item} className="text-sm text-text-secondary">
+              {item}
+            </span>
+          ))}
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -81,14 +77,20 @@ export function Hero({ onNavigate }: HeroProps) {
           className="flex flex-wrap gap-4"
         >
           <MagneticButton onClick={() => onNavigate('#work')}>
-            View My Work
+            View Work
           </MagneticButton>
           <MagneticButton
             variant="secondary"
             onClick={() => window.open(SITE.resumeUrl, '_blank')}
           >
             <FileText size={16} strokeWidth={1.5} />
-            Download Resume
+            Resume
+          </MagneticButton>
+          <MagneticButton
+            variant="secondary"
+            onClick={() => window.open(SITE.social.linkedin, '_blank')}
+          >
+            LinkedIn
           </MagneticButton>
         </motion.div>
       </div>

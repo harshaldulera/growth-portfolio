@@ -11,7 +11,7 @@ import { useTheme } from '@/hooks/useTheme'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
 import { useKeyboardNav } from '@/hooks/useKeyboardNav'
 
-const SECTION_IDS = ['home', 'about', 'work', 'experience', 'projects', 'writing', 'contact']
+const SECTION_IDS = ['home', 'about', 'work', 'experience', 'contact']
 
 function AppContent() {
   const { scrollTo } = useLenis()

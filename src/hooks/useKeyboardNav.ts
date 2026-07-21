@@ -5,9 +5,7 @@ const SECTION_MAP: Record<string, string> = {
   '1': '#home',
   '2': '#work',
   '3': '#experience',
-  '4': '#projects',
-  '5': '#writing',
-  '6': '#contact',
+  '4': '#contact',
 }
 
 export function useKeyboardNav(onNavigate: (href: string) => void) {
@@ -17,7 +15,7 @@ export function useKeyboardNav(onNavigate: (href: string) => void) {
         return
       }
 
-      if (e.key >= '1' && e.key <= '6') {
+      if (e.key >= '1' && e.key <= '4') {
         const href = SECTION_MAP[e.key]
         if (href) {
           e.preventDefault()

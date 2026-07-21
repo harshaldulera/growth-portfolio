@@ -8,19 +8,17 @@ export function Experience() {
       <div className="container-narrow">
         <FadeUp>
           <p className="label-sm mb-4">Experience</p>
-          <h2 className="heading-lg mb-12 md:mb-16">
-            Roles where I've built and operated growth systems.
-          </h2>
+          <h2 className="heading-lg mb-12 md:mb-16">Roles.</h2>
         </FadeUp>
 
         <div className="relative">
           <div className="absolute left-0 md:left-[7px] top-2 bottom-2 w-px bg-border" />
 
-          <div className="space-y-12 md:space-y-16">
+          <div className="space-y-10 md:space-y-12">
             {EXPERIENCE.map((item) => (
               <RevealOnScroll key={item.id}>
                 <div className="relative pl-8 md:pl-12">
-                  <div className="absolute left-0 md:left-0 top-2 w-[15px] h-[15px] rounded-full border-2 border-border bg-bg">
+                  <div className="absolute left-0 top-2 w-[15px] h-[15px] rounded-full border-2 border-border bg-bg">
                     <div className="absolute inset-[3px] rounded-full bg-accent" />
                   </div>
 
@@ -34,15 +32,13 @@ export function Experience() {
                     <p className="text-sm text-text-secondary tabular-nums">{item.period}</p>
                   </div>
 
-                  <p className="body-md mb-4">{item.description}</p>
-
-                  <ul className="space-y-2">
+                  <ul className="space-y-1.5">
                     {item.highlights.map((highlight) => (
                       <li
                         key={highlight}
                         className="text-sm text-text-secondary flex items-start gap-3"
                       >
-                        <span className="w-1 h-1 rounded-full bg-accent mt-2.5 flex-shrink-0" />
+                        <span className="w-1 h-1 rounded-full bg-accent mt-2 flex-shrink-0" />
                         {highlight}
                       </li>
                     ))}

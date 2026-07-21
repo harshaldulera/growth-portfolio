@@ -1,9 +1,8 @@
 import { Hero } from '@/sections/Hero'
 import { About } from '@/sections/About'
-import { SelectedWork } from '@/sections/SelectedWork'
+import { Impact } from '@/sections/Impact'
+import { FeaturedWork } from '@/sections/FeaturedWork'
 import { Experience } from '@/sections/Experience'
-import { Projects } from '@/sections/Projects'
-import { Writing } from '@/sections/Writing'
 import { Contact } from '@/sections/Contact'
 
 interface HomeProps {
@@ -15,11 +14,10 @@ export function Home({ onNavigate }: HomeProps) {
     <>
       <Hero onNavigate={onNavigate} />
       <About />
-      <SelectedWork />
+      <Impact />
+      <FeaturedWork />
       <Experience />
-      <Projects />
-      <Writing />
-      <Contact onNavigate={onNavigate} />
+      <Contact />
     </>
   )
 }

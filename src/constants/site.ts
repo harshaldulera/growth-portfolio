@@ -1,9 +1,12 @@
 export const SITE = {
   name: 'Harshal Dulera',
   role: 'Growth Operator',
-  headline: 'Helping startups build scalable user acquisition systems.',
-  tagline:
-    'I design growth systems that combine creator partnerships, operations, automation, and experimentation to help startups grow efficiently.',
+  headline: 'Building creator acquisition systems at The5ers.',
+  focus: ['Creator Partnerships', 'Growth Operations', 'Marketing Systems'] as const,
+  about: [
+    'Growth operator focused on creator partnerships, growth operations, and acquisition systems.',
+    'Currently building creator acquisition at The5ers while helping startups design growth processes.',
+  ] as const,
   email: 'harshaldulera02@gmail.com',
   resumeUrl: '/resume.pdf',
   social: {
@@ -16,8 +19,6 @@ export const NAV_LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'Work', href: '#work' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Writing', href: '#writing' },
   { label: 'Contact', href: '#contact' },
 ] as const
 

@@ -6,77 +6,53 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="section-padding section-spacing border-t border-border">
+    <footer className="section-padding py-12 md:py-16 border-t border-border">
       <div className="container-wide">
         <FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
-            <div className="md:col-span-5">
-              <p className="text-2xl font-semibold tracking-tight mb-3">{SITE.name}</p>
-              <p className="body-md max-w-sm">{SITE.tagline}</p>
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div>
+              <p className="font-semibold tracking-tight mb-1">{SITE.name}</p>
+              <p className="text-sm text-text-secondary">{SITE.role}</p>
             </div>
 
-            <div className="md:col-span-3">
-              <p className="label-sm mb-4">Navigation</p>
-              <ul className="space-y-2">
-                {NAV_LINKS.map((link) => (
-                  <li key={link.href}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-text-secondary hover:text-text transition-colors link-underline"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className="flex flex-wrap gap-6">
+              {NAV_LINKS.filter((l) => l.href !== '#home').map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-text-secondary hover:text-text transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
-            <div className="md:col-span-4">
-              <p className="label-sm mb-4">Connect</p>
-              <ul className="space-y-2">
-                <li>
-                  <a
-                    href={`mailto:${SITE.email}`}
-                    className="text-sm text-text-secondary hover:text-text transition-colors link-underline inline-flex items-center gap-1"
-                  >
-                    {SITE.email}
-                    <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={SITE.social.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-text-secondary hover:text-text transition-colors link-underline inline-flex items-center gap-1"
-                  >
-                    LinkedIn
-                    <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={SITE.social.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-text-secondary hover:text-text transition-colors link-underline inline-flex items-center gap-1"
-                  >
-                    X
-                    <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
-                  </a>
-                </li>
-              </ul>
+            <div className="flex gap-6">
+              <a
+                href={SITE.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-underline text-sm text-text-secondary hover:text-text transition-colors"
+              >
+                LinkedIn
+                <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
+              </a>
+              <a
+                href={SITE.social.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-underline text-sm text-text-secondary hover:text-text transition-colors"
+              >
+                X
+                <ArrowUpRight size={14} strokeWidth={1.5} className="shrink-0" />
+              </a>
             </div>
           </div>
 
-          <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row justify-between gap-4">
-            <p className="text-sm text-text-secondary">
-              © {year} {SITE.name}. All rights reserved.
-            </p>
-            <p className="text-sm text-text-secondary">
-              Built with intention.
-            </p>
-          </div>
+          <p className="mt-10 text-sm text-text-secondary">
+            © {year} {SITE.name}
+          </p>
         </FadeUp>
       </div>
     </footer>
