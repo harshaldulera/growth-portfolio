@@ -10,7 +10,8 @@ export const SITE = {
   email: 'harshaldulera02@gmail.com',
   resumeUrl: '/resume.pdf',
   social: {
-    linkedin: 'https://linkedin.com/in/harshaldulera',
+    linkedin: 'https://linkedin.com/in/harshal-dulera',
+    instagram: 'https://instagram.com/harshal.dulera',
     twitter: 'https://x.com/harshal0x01',
   },
 } as const
